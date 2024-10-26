@@ -17,7 +17,6 @@ try {
 
             docker run --rm -v .:/app jrottenberg/ffmpeg `
                 -i /app/trimmed/$oldName `
-                -vf "scale=w=1280:h=720:force_original_aspect_ratio=decrease,pad=1280:720" `
                 /app/videos/$newName
         }
     }
